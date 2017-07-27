@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Picas y Fijas</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body>
+
+    <div class="container">
+      <div class="col-sm-4 col-sm-offset-4">
+        <h1 id="title">Picas y Fijas</h1>
+        <p id="message">Ingrese <span>cuatro dígitos diferentes</span> y oprima enter</p>
+        <div class="form-group">
+          <input type="number" class="form-control">
+        </div>
+
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th>Número</th>
+              <th>Picas</th>
+              <th>Fijas</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+
+      </div>
+    </div>
+
+
+    <div class="bloquear">
+      <div id="ganador" >
+        <h1>¡¡ Ganaste !!</h1>
+        <a href="javascript:location.reload()" class="btn btn-warning btn-lg">Jugar Nuevamente</a>
+      </div>
+    </div>
+
+    <script id="game-template" type="text/x-handlebars-template">
+    
+      <tr>
+        <td>{{juego.userNumber}}</td>
+        <td>{{juego.picas}}</td>
+        <td>{{juego.fijas}}</td>
+      </tr>
+        
+    </script>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/3.0.3/handlebars.min.js"></script>
+    <script src="js/app.js"></script>
+
+  </body>
+</html>
